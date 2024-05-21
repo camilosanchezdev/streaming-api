@@ -34,3 +34,16 @@ model User {
 
   @@map("users")
 }
+
+model Movie {
+  id           Int       @id @default(autoincrement()) @map("movie_id")
+  title        String
+  release_date String
+  producer     String
+  url          String
+  createdAt    DateTime  @default(now()) @map("created_at")
+  updatedAt    DateTime? @updatedAt @map("updated_at")
+  deleted      Boolean   @default(false)
+
+  @@map("movies")
+}

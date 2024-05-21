@@ -8,10 +8,10 @@ import { Prisma, PrismaClient, User } from '@prisma/client';
 import * as bcrypt from 'bcryptjs';
 
 import { CreateUserDto } from './dtos/create-user.dto';
-import { BaseCrudService } from 'src/shared/services/base-crud.service';
-import { UpdateUserDto } from 'src/features/users/dtos/update-user.dto';
-import { RegisterUserDto } from 'src/features/users/dtos/register-user.dto';
-import { RolesEnum } from 'src/shared/enums/roles.enum';
+import { BaseCrudService } from './../../shared/services/base-crud.service';
+import { UpdateUserDto } from './dtos/update-user.dto';
+import { RegisterUserDto } from './dtos/register-user.dto';
+import { RolesEnum } from './../../shared/enums/roles.enum';
 
 @Injectable()
 export class UsersService extends BaseCrudService<

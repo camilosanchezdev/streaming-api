@@ -13,13 +13,13 @@ import { User } from '@prisma/client';
 import { ApiSecurity, ApiTags } from '@nestjs/swagger';
 import { AuthGuard } from '@nestjs/passport';
 
-import { UsersService } from 'src/features/users/users.service';
-import { RoleGuard } from 'src/core/auth/guards/roles.guard';
-import { Roles } from 'src/core/auth/decorators/role.decorator';
-import { CreateUserDto } from 'src/features/users/dtos/create-user.dto';
-import { RolesEnum } from 'src/shared/enums/roles.enum';
-import { UpdateUserDto } from 'src/features/users/dtos/update-user.dto';
-import { RegisterUserDto } from 'src/features/users/dtos/register-user.dto';
+import { UsersService } from './users.service';
+import { RoleGuard } from './../../core/auth/guards/roles.guard';
+import { Roles } from './../../core/auth/decorators/role.decorator';
+import { CreateUserDto } from './dtos/create-user.dto';
+import { RolesEnum } from './../../shared/enums/roles.enum';
+import { UpdateUserDto } from './dtos/update-user.dto';
+import { RegisterUserDto } from './dtos/register-user.dto';
 
 @Controller('users')
 @ApiTags('Users')

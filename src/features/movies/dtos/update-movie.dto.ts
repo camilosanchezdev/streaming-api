@@ -4,17 +4,17 @@ export class UpdateMovieDto {
 
     @IsString()
     @IsOptional()
-    title: string
+    title?: string
 
     @IsString()
     @IsOptional()
-    release_date: string
+    release_date?: string
 
     @IsString()
     @IsOptional()
-    producer: string
+    producer?: string
 
     @IsString()
     @IsOptional()
-    url: string
+    url?: string
 }

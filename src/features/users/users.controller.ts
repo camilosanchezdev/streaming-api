@@ -39,6 +39,8 @@ export class UsersController {
         return await this.engineService.getAll();
     }
 
+    @UseGuards(AuthGuard('jwt'), RoleGuard)
+    @Roles(RolesEnum.ADMINISTRADOR)
     @Get(':id')
     async getOne(@Param('id', ParseIntPipe) id: number): Promise<User> {
         return await this.engineService.getOne(id);

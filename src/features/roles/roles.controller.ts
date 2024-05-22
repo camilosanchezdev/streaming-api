@@ -14,10 +14,10 @@ import { Role } from '@prisma/client';
 import { ApiSecurity, ApiTags } from '@nestjs/swagger';
 import { AuthGuard } from '@nestjs/passport';
 import { RolesEnum } from '../../shared/enums/roles.enum';
-import { Roles } from 'src/core/auth/decorators/role.decorator';
-import { RoleGuard } from 'src/core/auth/guards/roles.guard';
-import { RolesService } from 'src/features/roles/roles.service';
-import { CreateUpdateRoleDto } from 'src/features/roles/dtos/create-update-role.dto';
+import { Roles } from '../../core/auth/decorators/role.decorator';
+import { RoleGuard } from '../../core/auth/guards/roles.guard';
+import { RolesService } from '../../features/roles/roles.service';
+import { CreateUpdateRoleDto } from '../../features/roles/dtos/create-update-role.dto';
 
 @Controller('roles')
 @ApiSecurity('bearer')

@@ -14,13 +14,13 @@ import {
 import { ApiSecurity, ApiTags } from '@nestjs/swagger';
 import { AuthGuard } from '@nestjs/passport';
 import { RolesEnum } from '../../shared/enums/roles.enum';
-import { Roles } from 'src/core/auth/decorators/role.decorator';
-import { RoleGuard } from 'src/core/auth/guards/roles.guard';
-import { MoviesService } from 'src/features/movies/movies.service';
-import { CreateMovieDto } from 'src/features/movies/dtos/create-movie.dto';
-import { UpdateMovieDto } from 'src/features/movies/dtos/update-movie.dto';
+import { Roles } from '../../core/auth/decorators/role.decorator';
+import { RoleGuard } from '../../core/auth/guards/roles.guard';
+import { MoviesService } from '../../features/movies/movies.service';
+import { CreateMovieDto } from '../../features/movies/dtos/create-movie.dto';
+import { UpdateMovieDto } from '../../features/movies/dtos/update-movie.dto';
 import { Movie } from '@prisma/client';
-import { IListPublicMovies } from 'src/features/movies/interfaces/list-public-movies.interface';
+import { IListPublicMovies } from '../../features/movies/interfaces/list-public-movies.interface';
 
 @Controller('movies')
 @ApiSecurity('bearer')

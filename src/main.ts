@@ -9,7 +9,7 @@ const swaggerCDN = 'https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.7.2'
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const config = new DocumentBuilder()
-    .setTitle('Jobify Master')
+    .setTitle('Streaming API')
     .setDescription('Documentation')
     .setVersion('1.0')
     .addTag('Version 1.0')

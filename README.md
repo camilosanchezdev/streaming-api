@@ -10,6 +10,7 @@ Streaming API is a simple and efficient API built using NestJS, Prisma, Postgres
 - [Running the API](#running-the-api)
 - [Running the tests](#running-the-tests)
 - [API Documentation](#api-documentation)
+- [Demo](#demo)
 
 ## Technologies
 
@@ -101,6 +102,11 @@ You can run all the test using the command:
 ## API Documentation
 
 The API is documented using Swagger. You can access the Swagger UI for the API documentation at `http://localhost:5000/docs`.
+
+## Demo
+
+You can run the demo API at:
+[Demo](https://streaming-api-rho.vercel.app/docs)
 
 ## License
 

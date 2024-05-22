@@ -2,7 +2,7 @@ import { Controller, Req, Post, UseGuards } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { ApiTags, ApiBody } from '@nestjs/swagger';
 import { AuthService } from './../../core/auth/auth.service';
-import { AuthDto } from 'src/core/auth/types/auth.dto';
+import { AuthDto } from '../../core/auth/types/auth.dto';
 
 @Controller('auth')
 @ApiTags('Auth')

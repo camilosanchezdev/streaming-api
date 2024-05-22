@@ -22,7 +22,7 @@ export class MoviesService extends BaseCrudService<
 
     async getPublicMovies(): Promise<IListPublicMovies> {
         try {
-            const response = await firstValueFrom(this.httpService.get<IListPublicMovies>('https://swapi.dev/api/films'));
+            const response = await firstValueFrom(this.httpService.get<IListPublicMovies>(process.env.MOVIES_URL));
             return response.data
         } catch (error) {
             throw new InternalServerErrorException(`Error getting data`);

@@ -108,6 +108,20 @@ The API is documented using Swagger. You can access the Swagger UI for the API d
 You can run the demo API at:
 [Demo](https://streaming-api-rho.vercel.app/docs)
 
+Admin user:
+
+```bash
+ email: admin@admin.com
+ password: 123
+```
+
+Regular user:
+
+```bash
+ email: user@user.com
+ password: 123
+```
+
 ## License
 
 This project is licensed under the MIT License.

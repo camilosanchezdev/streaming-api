@@ -4,8 +4,8 @@ import { User } from '@prisma/client';
 import * as bcrypt from 'bcryptjs';
 
 import { TokenType } from './types/token.type';
-import { UsersService } from 'src/features/users/users.service';
-import { AuthResponseType } from 'src/core/auth/types/auth-response.type';
+import { UsersService } from './../../features/users/users.service';
+import { AuthResponseType } from './../../core/auth/types/auth-response.type';
 
 @Injectable()
 export class AuthService {

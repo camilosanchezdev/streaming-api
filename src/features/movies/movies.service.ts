@@ -1,9 +1,9 @@
 import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import { Movie, Prisma, PrismaClient } from '@prisma/client';
 import { BaseCrudService } from '../../shared/services/base-crud.service';
-import { CreateMovieDto } from 'src/features/movies/dtos/create-movie.dto';
-import { UpdateMovieDto } from 'src/features/movies/dtos/update-movie.dto';
-import { IListPublicMovies } from 'src/features/movies/interfaces/list-public-movies.interface';
+import { CreateMovieDto } from './../../features/movies/dtos/create-movie.dto';
+import { UpdateMovieDto } from './../../features/movies/dtos/update-movie.dto';
+import { IListPublicMovies } from './../../features/movies/interfaces/list-public-movies.interface';
 import { HttpService } from '@nestjs/axios';
 import { firstValueFrom } from 'rxjs';
 
